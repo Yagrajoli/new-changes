@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,700&family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- <nav>
+        <li>
+            <ul>Algorithm Visualizer</ul>
+            <img width="30" height="30" src="https://img.icons8.com/ios-filled/50/FFFFFF/serial-tasks.png" alt="serial-tasks"/>        </li>
+        <li>
+            <ul><a href="#"></a>Merge</ul>
+            <ul><a href="#"></a>Insertion</ul>
+            <ul><a href="#"></a>Bubble</ul>
+            <ul><a href="#"></a>Heap</ul>
+            <ul><a href="#"></a>Quick</ul>
+            <ul><a href="#"></a>Dijkstra</ul>
+        </li>
+    </nav> -->
+    <section class="theory">
+        
+        <div class="intro">
+            <h1>Merge Sort</h1>
+            <p class="introtext">Merge Sort is a sorting algorithm that divides the list, sorts individual elements, and then merges them
+                to obtain a fully sorted list efficiently.</p>
+        </div>
+            <div class="svgimage">
+                <a href="#visualize">
+                        <img  width="50" height="50" src="https://img.icons8.com/ios-filled/50/circled-chevron-right.png"
+                        alt="circled-chevron-right"/>
+                    </a>
+            
+                <p>Continue to Visualizer</p>
+            </div>
+        
+    </section>
+
+    <section class="visualizer" id="visualize">
+        <div id="particles-js"></div>
+        <div class="container">
+            <div class="box">
+                <div id="bars"></div>
+            </div>
+
+            <div class="btn" id="buttons">
+                <input type="text" id="array-input" placeholder="Enter array values (optional) ">
+                <div class="btn_1">
+                    <input type="range" id="array-size-input" min="5" max="25" value="15">
+                </div>
+                <div class="btn_2">
+                    <button onclick="generateArray()">New Array</button>
+                    <button onclick="startSort()">Start Sort</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+
+
+</html>

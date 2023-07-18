@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pathfinding Visualizer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400;1,700&family=Poppins:wght@200;300;400;500;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <!--Header section start-->
+    <header class="header">
+        <div class="logo">
+            <h1>Algorithm Visualizer</h1>
+        </div>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="" onclick="myfun()" class="nav-link" id="nav-link-algo">Merge</a>
+                
+                    <!-- <ul class="dropdown-menu" id="submenu-content">
+                        <li><a href="#">Dijkstra's Algorithm</a></li>
+                        <li><a href="#" class="heapsort">Heap Sort</a></li>
+                        <li><a href="#">Merge Sort</a></li>
+                        <li><a href="#">Quick Sort</a></li>
+                        <li><a href="#">Insertion Sort</a></li>
+                        <li><a href="#" class="bubble-sort">Bubble Sort</a></li>
+                    </ul> -->
+                
+                </li>
+                <li><a href="#" onclick="myfun()" class="nav-link nav-link-2" >Insertion</a>
+                    <!-- <ul class="dropdown-menu dropdown-menu-2">
+                        <li><a href="#">Dijkstra's Algorithm</a></li>
+                        <li><a href="#">Heap Sort</a></li>
+                        <li><a href="#">Merge Sort</a></li>
+                        <li><a href="#">Quick Sort</a></li>
+                        <li><a href="#">Insertion Sort</a></li>
+                        <li><a href="#" id="bubble-sort">Bubble Sort</a></li>
+                    </ul> -->
+                
+                </li>
+                <li><a href="#" class="nav-link" >Bubble</a></li>
+                <li><a href="#" class="nav-link" >Heap</a></li>
+                <li><a href="#" class="nav-link" >Quick</a></li>
+                <li><a href="#" class="nav-link" >dijkstra</a></li>
+                <!-- <li><a href="#" class="nav-link" >Clear Path</a></li>
+                <li><a href="#" class="nav-link" >Speed: Fast</a></li> -->
+            </ul>
+        </nav>
+    </header>
+
+<!-- header section end -->
+
+<section class="main-section">
+    <div class="main-text">
+        <ul>
+            <li> <div class="start iocons"><ion-icon name="chevron-forward-outline"></ion-icon></div> Start Node</li>
+            <li> <div class="target iocons"><ion-icon name="radio-button-on-outline"></ion-icon></div> Target Node</li>
+            <li> <div class="bomb iocons"><ion-icon name="balloon"></ion-icon></div> Bomb Node</li>
+            <li> <div class="weight iocons">  <ion-icon name="barbell-sharp"></ion-icon> </div> Weights Node</li>
+            <li> <div class="unvisited iocons"></div> Unvisited Node</li>
+            <li> <div class="visited iocons"></div> <div class="visited visited-1"></div> visited Node</li>
+            <li> <div class="shortest-path iocons"></div>Shortest-path Node</li>
+            <li> <div class="wall iocons "></div>Wall Node</li>
+
+
+        </ul>
+    </div>
+
+    <div class="algorithm-description">
+        <p>Pick an Algorithms and Visualize it!</p>
+    </div> 
+    
+    <!-- For bubble sort -->
+    
+        <!-- <div class="bubble" id="bubble">
+            
+        </div> -->
+
+
+        <div class="theory">
+        
+            <div class="intro">
+                <h1>Merge Sort</h1>
+                <p class="introtext">Merge Sort is a sorting algorithm that divides the list, sorts individual elements, and then merges them
+                    to obtain a fully sorted list efficiently.</p>
+            </div>
+                <div class="svgimage">
+                    <a href="#visualize">
+                            <img  width="50" height="50" src="https://img.icons8.com/ios-filled/50/circled-chevron-right.png"
+                            alt="circled-chevron-right"/>
+                        </a>
+                
+                    <p>Continue to Visualizer</p>
+                </div>
+            
+         </div>
+    
+        
+    
+       
+    
+</section>
+
+<section class="visualizer" id="visualize">
+            <div id="particles-js"></div>
+            <div class="container">
+                <div class="box">
+                    <div id="bars"></div>
+                </div>
+    
+                <div class="btn" id="buttons">
+                    <input type="text" id="array-input" placeholder="Enter array values (optional) ">
+                    <div class="btn_1">
+                        <input type="range" id="array-size-input" min="5" max="25" value="15">
+                    </div>
+                    <div class="btn_2">
+                        <button onclick="generateArray()">New Array</button>
+                        <button onclick="startSort()">Start Sort</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+
+
+
+    <!-- CDN link for ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <!-- custom js link -->
+    <script src="app.js"></script>
+    <script src="insertion.js"></script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
